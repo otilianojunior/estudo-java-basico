@@ -9,6 +9,7 @@ public class TiposOperadores {
         operadorTernario();
         operadorAtribuicao();
         operadorBitwise();
+        operadorObjetos();
     }
 
     public static void operadorAritmetico() {
@@ -82,6 +83,19 @@ public class TiposOperadores {
         System.out.println("NOT (~a): " + (~a));
         System.out.println("Shift left (a << 1): " + (a << 1));
         System.out.println("Shift right (a >> 1): " + (a >> 1));
+    }
+
+    public static void operadorObjetos() {
+        String str1 = new String("Hello");
+        String str2 = new String("Olá");
+        String str3 = str1;
+
+        System.out.println("\nOperadores para Objetos:");
+        System.out.println("Valores das variáveis: str1 = \"" + str1 + "\", str2 = \"" + str2 + "\", str3 = \"" + str3 + "\"");
+
+        System.out.println("Comparação de referências (str1 == str2): " + (str1 == str2));
+        System.out.println("Comparação de conteúdo (str1.equals(str2)): " + (str1.equals(str2)));
+        System.out.println("Comparação de referências (str1 == str3): " + (str1 == str3));
     }
 }
 

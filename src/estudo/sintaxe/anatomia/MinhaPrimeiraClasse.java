@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //codigo para mostrar a utilização da classe main,
 // com conceitos bem defindos de classe, variaveis e metodos.
-public class MinhaClasse {
+public class MinhaPrimeiraClasse {
     private static int quantidadeNumeros;
     private static float[] arrayNumeros;
 
